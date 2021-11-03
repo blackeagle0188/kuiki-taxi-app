@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\work\\android\\kuiki\\kuiki.jks')
+            storePassword 'fernando'
+            keyAlias 'kuiki'
+            keyPassword 'fernando'
+        }
+    }
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.mobiledevteam.kuiki"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 6
+        versionName "1.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+    implementation 'com.google.firebase:firebase-database:20.0.0'
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.koushikdutta.ion:ion:3.0.8'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.hbb20:ccp:2.4.2'
+    implementation 'com.stripe:stripe-android:16.1.1'
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.github.dhaval2404:imagepicker:1.8'
+    implementation 'com.stripe:stripe-android:16.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation 'com.google.android.material:material:1.4.0-beta01'
+    implementation 'com.github.tylersuehr7:bubble-layout:1.0'
+    implementation 'com.whiteelephant:monthandyearpicker:1.3.0'
+    implementation 'com.github.nanchen2251:NCSwitchMultiButton-Android:1.0.1'
+    //chat-ui
+    implementation project(':chat-ui')
+}

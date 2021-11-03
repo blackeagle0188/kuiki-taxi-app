@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_driver_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_background"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/poppins"
+                android:background="@drawable/menu_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <com.mobiledevteam.kuiki.SwitchButton
+                    android:id="@+id/switch_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    app:sb_background="#FFF"
+                    app:sb_button_color="#db99c7"
+                    app:sb_checked="true"
+                    app:sb_checked_color="#A6E39C"
+                    app:sb_checkedbutton_color="#61d74f"
+                    app:sb_checkline_color="#a5dc88"
+                    app:sb_shadow_color="#A36F95"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheck_color="#ED5252"
+                    app:sb_uncheckbutton_color="#ED5252" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/string_rate_user"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/poppins"
+                android:textSize="24sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/review_user_profile"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/icon_user_default"
+                app:civ_border_color="#1E4D88"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/review_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/poppins"
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:id="@+id/star_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="5"
+                android:theme="@style/RatingBar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_your_felt"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/driver_option1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_polite"
+                        android:fontFamily="@font/poppins"/>
+
+                    <CheckBox
+                        android:id="@+id/driver_option2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_good_talk"
+                        android:fontFamily="@font/poppins"/>
+
+                    <CheckBox
+                        android:id="@+id/driver_option3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_rude"
+                        android:fontFamily="@font/poppins"/>
+
+                    <CheckBox
+                        android:id="@+id/driver_option4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_conflictive"
+                        android:fontFamily="@font/poppins"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txt_driver_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="bottom"
+                android:hint="@string/string_comment_hint"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_driver_submit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ripple_effect_black"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/string_submit"
+                    android:textColor="@color/colorWhite"
+                    android:textAllCaps="false"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/txt_driver_cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ripple_effect_gray"
+                    android:text="@string/string_cancel"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/colorBlack"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+<com.google.android.material.navigation.NavigationView
+        android:id="@+id/driverView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="60dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_passenger_mode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect_black"
+            android:text="@string/string_passenger_mode"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/poppins"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

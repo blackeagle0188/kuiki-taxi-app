@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="status">
+        <item>@string/string_busy</item>
+        <item>@string/string_available</item>
+    </string-array>
+</resources>

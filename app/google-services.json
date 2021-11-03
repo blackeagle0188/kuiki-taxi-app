@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "807359488025",
+    "firebase_url": "https://kuiki-lab-default-rtdb.firebaseio.com",
+    "project_id": "kuiki-lab",
+    "storage_bucket": "kuiki-lab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807359488025:android:144e842561d8e9feb30a88",
+        "android_client_info": {
+          "package_name": "com.mobiledevteam.kuiki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807359488025-i0gclr5ucd8eqk2u83vlhtif2bmdvueu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobiledevteam.kuiki",
+            "certificate_hash": "5d14658a99105a96c4b9098029c9a7ab344bf329"
+          }
+        },
+        {
+          "client_id": "807359488025-hpj1gefi95s30e2ir65iu5v7cjaoi70t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBymj4yxxTiMRQ6qAHndQBVbBpoUCdp94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807359488025-hpj1gefi95s30e2ir65iu5v7cjaoi70t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

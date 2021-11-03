@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_offers"
+        android:icon="@drawable/ic_baseline_checklist_rtl_24"
+        android:title="@string/string_offer_history"/>
+    <item
+        android:id="@+id/navigation_income"
+        android:icon="@drawable/ic_outline_calendar_today_24"
+        android:title="@string/string_income" />
+    <item
+        android:id="@+id/navigation_reviews"
+        android:icon="@drawable/ic_outline_rate_review_24"
+        android:title="@string/string_reviews" />
+    <item
+        android:id="@+id/navigation_payment"
+        android:icon="@drawable/ic_outline_credit_card_24"
+        android:title="@string/string_payment" />
+
+</menu>

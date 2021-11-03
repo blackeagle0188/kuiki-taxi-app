@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_driver_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_background"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/menu_back" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/string_setting"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <com.mobiledevteam.kuiki.SwitchButton
+                    android:id="@+id/switch_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:sb_background="#FFF"
+                    app:sb_button_color="#db99c7"
+                    app:sb_checked="true"
+                    app:sb_checked_color="#FFFFFF"
+                    app:sb_checkedbutton_color="#61d74f"
+                    app:sb_checkline_color="#a5dc88"
+                    app:sb_shadow_color="#A36F95"
+                    app:sb_show_indicator="false"
+                    app:sb_uncheck_color="#ED5252"
+                    app:sb_uncheckbutton_color="#ED5252" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_driver_spanish"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/ripple_effect_black"
+                        android:fontFamily="@font/poppins"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="Español"
+                        android:textColor="@color/colorWhite"
+                        android:textAllCaps="false"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_driver_english"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/ripple_effect_black"
+                        android:fontFamily="@font/poppins"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="English"
+                        android:textColor="@color/colorWhite"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_logout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/ripple_effect_gray"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/string_sign_out"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/colorBlack"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/driverView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="60dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_passenger_mode"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_effect_black"
+                android:text="@string/string_passenger_mode"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
